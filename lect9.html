@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+color: aqua;
+/* display: inline-block; */
+position: relative;
+
+display: inline-block;
+text-shadow: 3px 5px 4px rgba(0,0,0,0.75);
+        }
+   /* h1::before     {
+
+content: "My Name is";
+color: blue;
+
+
+
+        } */
+        h1::after{
+            content: "";
+            color: red;
+            width: 0%;
+            height: 5px;
+            background-color: tomato;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 0.4s;
+        }
+        h1:hover::after{
+width: 100%;
+
+        }
+        .box{
+            box-shadow: -9px -4px 20px -12px rgba(0,0,0,0.75);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <h1>Ali Shabbir</h1>
+    </div>
+
+
+
+    
+</body>
+</html>

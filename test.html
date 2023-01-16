@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="increment-count">+</button>
+    <div id="total-count">
+    </div>
+    <button id="decrement-count">-</button>
+
+
+    <script>
+        // Select increment and decrement buttons
+const incrementCount = document.getElementById("increment-count");
+const decrementCount = document.getElementById("decrement-count");
+
+// Select total count
+const totalCount = document.getElementById("total-count");
+
+// Variable to track count
+var count = 0;
+
+// Display initial count value
+totalCount.innerHTML = count;
+// Function to increment count
+const handleIncrement = () => {
+  count++;
+ if (count>9) {
+    window.alert("You Cant go up from here")
+    count = 0
+ }
+  
+  totalCount.innerHTML = count;
+};
+
+// Function to decrement count
+const handleDecrement = () => {
+  count--;
+  if (count<0) {
+    window.alert("You Cant go down from here")
+    count = 0
+ }
+  totalCount.innerHTML = count;
+};
+
+// Add click event to buttons
+incrementCount.addEventListener("click", handleIncrement);
+decrementCount.addEventListener("click", handleDecrement);
+    </script>
+    <!-- <style>/*! elementor - v3.8.1 - 13-11-2022 */<br />.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> -->
+
+<!-- <a href="https://almashotelpk.com/wp-content/uploads/2022/11/314421527_513658577069989_3830551220611176202_n.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-title="314421527_513658577069989_3830551220611176202_n"> -->
+<!-- <img title="314421527_513658577069989_3830551220611176202_n" src="https://almashotelpk.com/wp-content/uploads/elementor/thumbs/314421527_513658577069989_3830551220611176202_n-px9v4luplvlezrv1jowv9wa604dkel6klejye2yi8g.jpg" alt="314421527_513658577069989_3830551220611176202_n" /> </a> -->
+
+<!-- <style>/*! elementor - v3.8.1 - 13-11-2022 */<br />.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style> -->
+<!-- <figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314373747_3442499672742791_888368381822657762_n-150x150.jpg" alt="314373747_3442499672742791_888368381822657762_n" /></figure> -->
+<!-- <figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314377791_512732293828522_3696366744264683014_n-150x150.jpg" alt="314377791_512732293828522_3696366744264683014_n" /></figure> -->
+<!-- <figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314342033_613030330567397_8419499383304819611_n-150x150.jpg" alt="314342033_613030330567397_8419499383304819611_n" /></figure> -->
+<!-- Previous
+Next -->
+<!-- 
+<style>/*! elementor - v3.8.1 - 13-11-2022 */<br/>.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style> -->
+<!-- <h5>Master Bed</h5> -->
+<!-- <h5>9 Rooms Available</h5>
+<h6>Room Rent: Rs.4000</h6>
+<a href="https://almashotelpk.com/wp-content/uploads/2022/11/308434957_832169461114355_7419022044238391048_n-1-scaled.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-title="308434957_832169461114355_7419022044238391048_n (1)">
+<img title="308434957_832169461114355_7419022044238391048_n (1)" src="https://almashotelpk.com/wp-content/uploads/elementor/thumbs/308434957_832169461114355_7419022044238391048_n-1-scaled-pxdiz6cv8vagvr7dwx7zvm6whr50yrqg6qq4f367kg.jpg" alt="308434957_832169461114355_7419022044238391048_n (1)" /> </a>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314374135_3346428115615505_5007131155131475161_n-1-150x150.jpg" alt="314374135_3346428115615505_5007131155131475161_n (1)" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314374135_3346428115615505_5007131155131475161_n-2-150x150.jpg" alt="314374135_3346428115615505_5007131155131475161_n (2)" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/308434957_832169461114355_7419022044238391048_n-1-1-150x150.jpg" alt="308434957_832169461114355_7419022044238391048_n (1)" /></figure>
+Previous
+Next
+<h5>3 Bed Basic</h5>
+<h5>3 Rooms Available</h5>
+<h6>Room Rent: Rs.4500</h6>
+<a href="https://almashotelpk.com/wp-content/uploads/2022/11/314012987_1071317980218786_3443237392972138039_n.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-title="314012987_1071317980218786_3443237392972138039_n">
+<img title="314012987_1071317980218786_3443237392972138039_n" src="https://almashotelpk.com/wp-content/uploads/elementor/thumbs/314012987_1071317980218786_3443237392972138039_n-pxdjpc75gv3s117b58c6a0irpu6t7hlhs8enacdqds.jpg" alt="314012987_1071317980218786_3443237392972138039_n" /> </a>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/308434957_832169461114355_7419022044238391048_n-1-2-150x150.jpg" alt="308434957_832169461114355_7419022044238391048_n (1)" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/308656693_782644092944513_81679271129034877_n-1-150x150.jpg" alt="308656693_782644092944513_81679271129034877_n" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/313914854_700098434781468_3559219804211977522_n-1-150x150.jpg" alt="313914854_700098434781468_3559219804211977522_n" /></figure>
+Previous
+Next
+<h5>3 Bed Delux​</h5>
+<h5>3 Rooms Available</h5>
+<h6>Room Rent: Rs.5000</h6>
+<a href="https://almashotelpk.com/wp-content/uploads/2022/11/314394713_2102035416652252_184782761482257098_n-scaled.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-title="314394713_2102035416652252_184782761482257098_n">
+<img title="314394713_2102035416652252_184782761482257098_n" src="https://almashotelpk.com/wp-content/uploads/elementor/thumbs/314394713_2102035416652252_184782761482257098_n-scaled-pxdk7ozoxe8cqwjgynywgvrtbppuipgsn30znv5yvk.jpg" alt="314394713_2102035416652252_184782761482257098_n" /> </a>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314395296_351563663839990_8858171550341130615_n-150x150.jpg" alt="314395296_351563663839990_8858171550341130615_n" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314422135_576933063920316_2510962561242329597_n-150x150.jpg" alt="314422135_576933063920316_2510962561242329597_n" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314147475_1172105223401901_4356761352936345297_n-150x150.jpg" alt="314147475_1172105223401901_4356761352936345297_n" /></figure>
+Previous
+Next
+<h5>4 Bed</h5>
+<h5>2 Rooms Available</h5>
+<h6>Room Rent: Rs.5000</h6>
+<a href="https://almashotelpk.com/wp-content/uploads/2022/11/314352376_1458958001253195_7574285453457381898_n.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-title="314352376_1458958001253195_7574285453457381898_n">
+<img title="314352376_1458958001253195_7574285453457381898_n" src="https://almashotelpk.com/wp-content/uploads/elementor/thumbs/314352376_1458958001253195_7574285453457381898_n-pxdkcv3qilb4lp14rwf16kt2y08iurznco74oni0nk.jpg" alt="314352376_1458958001253195_7574285453457381898_n" /> </a>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314373747_3442499672742791_888368381822657762_n-150x150.jpg" alt="314373747_3442499672742791_888368381822657762_n" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314377791_512732293828522_3696366744264683014_n-150x150.jpg" alt="314377791_512732293828522_3696366744264683014_n" /></figure>
+<figure><img src="https://almashotelpk.com/wp-content/uploads/2022/11/314342033_613030330567397_8419499383304819611_n-150x150.jpg" alt="314342033_613030330567397_8419499383304819611_n" /></figure>
+Previous
+Next
+<h5>Family Suit​</h5>
+<h5>2 Rooms Available</h5>
+<h6>Room Rent: Rs.6000</h6>
+<form id="wpforms-form-588" action="/wp-admin/admin-ajax.php" enctype="multipart/form-data" method="post" data-formid="588" data-token="13e903400e302a0cb105d1555df43a97"><noscript>Please enable JavaScript in your browser to complete this form.</noscript><label for="wpforms-588-field_2">Name *</label><input id="wpforms-588-field_2" name="wpforms[fields][2]" required="" type="text" /><label for="wpforms-588-field_3">Phone *</label><input id="wpforms-588-field_3" name="wpforms[fields][3]" required="" type="tel" data-rule-smart-phone-field="true" /><label for="wpforms-588-field_4">Check In Date *</label><input id="wpforms-588-field_4" name="wpforms[fields][4][date]" required="" type="text" data-date-format="m/d/Y" data-disable-past-dates="0" data-input="true" /><label for="wpforms-588-field_6">Check Out Date *</label><input id="wpforms-588-field_6" name="wpforms[fields][6][date]" required="" type="text" data-date-format="m/d/Y" data-disable-past-dates="0" data-input="true" /><label for="wpforms-588-field_11">Message</label><textarea id="wpforms-588-field_11" name="wpforms[fields][11]"></textarea><input name="wpforms[id]" type="hidden" value="588" /><input name="wpforms[author]" type="hidden" value="1" /><button id="wpforms-submit-588" name="wpforms[submit]" type="submit" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Book Now">Book Now</button></form><!-- .wpforms-container -->
+</body>
+</html> 
